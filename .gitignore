@@ -1,0 +1,249 @@
+# SASD Prompt Manager
+# .gitignore
+#
+# Keeps generated files, local settings, caches, build artifacts, secrets,
+# temporary exports, backups and IDE-specific state out of the repository.
+#
+# Never commit API keys, model provider tokens, database passwords or
+# customer/project secrets.
+
+# Operating system files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Editor and IDE files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.example.json
+!.vscode/tasks.json
+!.vscode/launch.example.json
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.rsuser
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.local
+*.secret
+*.secrets
+secrets/
+private/
+credentials/
+tokens/
+keys/
+*.pem
+*.key
+*.pfx
+*.p12
+*.crt
+*.cer
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+
+# Application-local runtime data
+data/
+runtime/
+storage/
+local-storage/
+app-data/
+user-data/
+uploads/
+downloads/
+tmp/
+temp/
+cache/
+logs/
+*.log
+*.pid
+*.seed
+
+# Keep example placeholders if needed
+!data/.gitkeep
+!storage/.gitkeep
+!logs/.gitkeep
+
+# Prompt Manager generated data
+exports/
+imports/tmp/
+backups/
+backup/
+generated/
+generated-docs/
+generated-reports/
+prompt-runs/
+execution-logs/
+model-cache/
+vector-cache/
+embedding-cache/
+rag-index/
+search-index/
+
+# Generated documentation artifacts
+docs/generated/
+docs/_build/
+docs/.cache/
+docs/**/*.tmp
+docs/**/*.bak
+docs/**/*.log
+
+# Ignore generated office/pdf files by default.
+# Commit intentionally only when they are official project documents/releases.
+docs/**/*.docx
+docs/**/*.pdf
+docs/**/*.odt
+
+# Keep source documentation formats
+!docs/**/*.md
+!docs/**/*.drawio
+!docs/**/*.plantuml
+!docs/**/*.puml
+!docs/**/*.mermaid
+!docs/**/*.mmd
+
+# Screenshots and design drafts
+# Keep curated screenshots in docs/screenshots.
+render/
+renders/
+screenshots/tmp/
+design/tmp/
+
+# Archives and packaged releases
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+!releases/.gitkeep
+
+# Node.js / JavaScript / TypeScript / React / Vite
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+.npm/
+.yarn/
+.yarn-cache/
+.parcel-cache/
+.next/
+.nuxt/
+.svelte-kit/
+dist/
+build/
+coverage/
+.nyc_output/
+vite.svg
+
+# PHP / Composer
+vendor/
+composer.phar
+.phpunit.cache/
+.phpunit.result.cache
+phpunit.xml
+!phpunit.xml.dist
+.php-cs-fixer.cache
+.phpstan.cache/
+psalm.xml
+!psalm.xml.dist
+
+# .NET / C# / Visual Studio
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+[Ll]ogs/
+TestResults/
+.vs/
+packages/
+*.nupkg
+*.snupkg
+*.vsp
+*.vspx
+*.coverage
+*.coveragexml
+*.trx
+*.opendb
+*.VC.db
+*.VC.VC.opendb
+
+# Java / Maven / Gradle
+target/
+.gradle/
+build/
+out/
+*.class
+*.jar
+*.war
+*.ear
+
+# Python helper scripts / tooling
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+htmlcov/
+
+# Databases and local persistence
+*.sqlite
+*.sqlite3
+*.db
+*.db-shm
+*.db-wal
+*.mdb
+*.accdb
+*.bak
+*.dump
+
+# Keep database migrations/schema files
+!database/**/*.sql
+!database/**/*.md
+!database/**/.gitkeep
+
+# Docker / local container state
+.docker/
+docker-data/
+docker-volumes/
+compose.override.yml
+docker-compose.override.yml
+
+# Logs and reports from tests, linting and builds
+coverage/
+reports/
+test-reports/
+lint-reports/
+junit.xml
+clover.xml
+
+# Misc temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+~$*
+*.orig
+*.rej
