@@ -1,13 +1,13 @@
-# SASD Prompt Manager
-# .gitignore
+## SASD Prompt Manager
+## .gitignore
 #
-# Keeps generated files, local settings, caches, build artifacts, secrets,
-# temporary exports, backups and IDE-specific state out of the repository.
+## Keeps generated files, local settings, caches, build artifacts, secrets,
+## temporary exports, backups and IDE-specific state out of the repository.
 #
-# Never commit API keys, model provider tokens, database passwords or
-# customer/project secrets.
+## Never commit API keys, model provider tokens, database passwords or
+## customer/project secrets.
 
-# Operating system files
+## Operating system files
 .DS_Store
 .AppleDouble
 .LSOverride
@@ -19,7 +19,7 @@ ehthumbs.db
 Thumbs.db
 Desktop.ini
 
-# Editor and IDE files
+## Editor and IDE files
 .vscode/*
 !.vscode/extensions.json
 !.vscode/settings.example.json
@@ -32,7 +32,7 @@ Desktop.ini
 *.sln.docstates
 *.rsuser
 
-# Local environment and secrets
+## Local environment and secrets
 .env
 .env.*
 !.env.example
@@ -55,7 +55,7 @@ id_rsa.pub
 id_ed25519
 id_ed25519.pub
 
-# Application-local runtime data
+## Application-local runtime data
 data/
 runtime/
 storage/
@@ -72,12 +72,12 @@ logs/
 *.pid
 *.seed
 
-# Keep example placeholders if needed
+## Keep example placeholders if needed
 !data/.gitkeep
 !storage/.gitkeep
 !logs/.gitkeep
 
-# Prompt Manager generated data
+## Prompt Manager generated data
 exports/
 imports/tmp/
 backups/
@@ -93,7 +93,7 @@ embedding-cache/
 rag-index/
 search-index/
 
-# Generated documentation artifacts
+## Generated documentation artifacts
 docs/generated/
 docs/_build/
 docs/.cache/
@@ -101,13 +101,13 @@ docs/**/*.tmp
 docs/**/*.bak
 docs/**/*.log
 
-# Ignore generated office/pdf files by default.
-# Commit intentionally only when they are official project documents/releases.
-docs/**/*.docx
-docs/**/*.pdf
+## Ignore generated office/pdf files by default.
+## Commit intentionally only when they are official project documents/releases.
+#docs/**/*.docx
+#docs/**/*.pdf
 docs/**/*.odt
 
-# Keep source documentation formats
+## Keep source documentation formats
 !docs/**/*.md
 !docs/**/*.drawio
 !docs/**/*.plantuml
@@ -115,14 +115,14 @@ docs/**/*.odt
 !docs/**/*.mermaid
 !docs/**/*.mmd
 
-# Screenshots and design drafts
-# Keep curated screenshots in docs/screenshots.
+## Screenshots and design drafts
+## Keep curated screenshots in docs/screenshots.
 render/
 renders/
 screenshots/tmp/
 design/tmp/
 
-# Archives and packaged releases
+## Archives and packaged releases
 *.zip
 *.tar
 *.tar.gz
@@ -131,7 +131,7 @@ design/tmp/
 *.rar
 !releases/.gitkeep
 
-# Node.js / JavaScript / TypeScript / React / Vite
+## Node.js / JavaScript / TypeScript / React / Vite
 node_modules/
 npm-debug.log*
 yarn-debug.log*
@@ -151,7 +151,7 @@ coverage/
 .nyc_output/
 vite.svg
 
-# PHP / Composer
+## PHP / Composer
 vendor/
 composer.phar
 .phpunit.cache/
@@ -163,7 +163,7 @@ phpunit.xml
 psalm.xml
 !psalm.xml.dist
 
-# .NET / C# / Visual Studio
+## .NET / C# / Visual Studio
 bin/
 obj/
 [Bb]uild/
@@ -183,7 +183,7 @@ packages/
 *.VC.db
 *.VC.VC.opendb
 
-# Java / Maven / Gradle
+## Java / Maven / Gradle
 target/
 .gradle/
 build/
@@ -193,7 +193,7 @@ out/
 *.war
 *.ear
 
-# Python helper scripts / tooling
+## Python helper scripts / tooling
 __pycache__/
 *.py[cod]
 *$py.class
@@ -207,7 +207,7 @@ ENV/
 .tox/
 htmlcov/
 
-# Databases and local persistence
+## Databases and local persistence
 *.sqlite
 *.sqlite3
 *.db
@@ -218,19 +218,19 @@ htmlcov/
 *.bak
 *.dump
 
-# Keep database migrations/schema files
+## Keep database migrations/schema files
 !database/**/*.sql
 !database/**/*.md
 !database/**/.gitkeep
 
-# Docker / local container state
+## Docker / local container state
 .docker/
 docker-data/
 docker-volumes/
 compose.override.yml
 docker-compose.override.yml
 
-# Logs and reports from tests, linting and builds
+## Logs and reports from tests, linting and builds
 coverage/
 reports/
 test-reports/
@@ -238,7 +238,7 @@ lint-reports/
 junit.xml
 clover.xml
 
-# Misc temporary files
+## Misc temporary files
 *.tmp
 *.temp
 *.swp
